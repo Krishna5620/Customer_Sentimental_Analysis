@@ -93,7 +93,7 @@ Perform lemmatization to convert words into their base form (e.g., "running" →
 df = pd.DataFrame({"Names":Names, "Cities":Cities, "Posted_On":Posted_On, "Occasions":Occasions, "Ratings":Ratings, "Reviews":Reviews})
 df
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Customer_Sentimental_Analysis/blob/main/Data%20Frame%20after%20cleaning.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/Data%20Frame%20after%20cleaning.png)
 ```python
 ###Extracting and Cleaning from Posted_On and Occassions Columns
 def extract(value):
@@ -107,7 +107,7 @@ df["Posted_On"] = df["Posted_On"].apply(extract)
 df["Occasions"] = df["Occasions"].apply(extract)
 df
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Customer_Sentimental_Analysis/blob/main/After%20removing%20extra%20text%20from%20columns.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis)
 ## Removing (th, rd,st,nd) from Posted_On Columns
 ```python
 #Removing (th, rd,st,nd) from Posted_On Columns
@@ -121,7 +121,7 @@ df
 # Checking the datatype of each.
 df.info()
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Customer_Sentimental_Analysis/blob/main/Checking%20the%20datatype%20of%20each..png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis)
 
 
 ## 3. Sentiment Analysis:
@@ -166,7 +166,7 @@ def score(value):
 df["Score"] = df["Polarity"].apply(score)
 df
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Customer_Sentimental_Analysis/blob/main/Polarity%20Score.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis)
 
 ```python
 # Plotting score and there count 
@@ -174,8 +174,7 @@ ax = sns.countplot(x = df['Score'], data = df)
 ax.bar_label(container=ax.containers[0])
 plt.show()
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Customer_Sentimental_Analysis/blob/main/Sentiment%20Distribution.png)
-
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/Sentiment%20Distribution.png)
 
 ## Data Analysis and Insights:
 
@@ -204,7 +203,7 @@ plt.axis('off')
 plt.show()
 
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Customer_Sentimental_Analysis/blob/main/Positive%20review%20word%20cloud.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/Positive%20review%20word%20cloud.png)
 
 ```python
 # Negative reviews word cloud
@@ -216,7 +215,7 @@ plt.axis('off')
 plt.show()
 ```
 
-![Dashboard Screenshot](https://github.com/RushiSonar123/Customer_Sentimental_Analysis/blob/main/Negative%20review%20word%20cloud.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/Negative%20review%20word%20cloud.png)
 
 ```python
 # Correlation between Rating and Polarity
@@ -233,7 +232,7 @@ plt.axhline(0, color="red", linestyle="--")
 plt.show()
 ```
 
-![Dashboard Screenshot](https://github.com/RushiSonar123/Customer_Sentimental_Analysis/blob/main/Corelation.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/Corelation.png)
 
 ```python
 # Average polarity per rating
@@ -247,10 +246,9 @@ plt.xlabel("Ratings")
 plt.ylabel("Average Polarity")
 plt.show()
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Customer_Sentimental_Analysis/blob/main/Rating%20vs%20sentiment%20Polarity.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/Rating%20vs%20sentiment%20Polarity.png)
 
-![Dashboard Screenshot](https://github.com/RushiSonar123/Customer_Sentimental_Analysis/blob/main/Average%20Sentiment%20Polarity%20by%20Rating.png)
-
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/Average%20Sentiment%20Polarity%20by%20Rating.png)
 ```python
 # Add Review Length (number of words per review)
 df["Review_Length"] = df["Reviews"].apply(lambda x: len(x.split()))
@@ -268,7 +266,7 @@ plt.ylabel("Sentiment Polarity")
 plt.axhline(0, color="red", linestyle="--")
 plt.show()
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Customer_Sentimental_Analysis/blob/main/Correlation%20between%20review%20length%20and%20sentiment%20polarity.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/Correlation%20between%20review%20length%20and%20sentiment%20polarity.png)
 
 ```python
 # Compare average length between positive and negative reviews
@@ -284,7 +282,7 @@ plt.xlabel("Sentiment")
 plt.ylabel("Review Length (words)")
 plt.show()
 ```
-![Dashboard Screenshot](https://github.com/RushiSonar123/Customer_Sentimental_Analysis/blob/main/Review%20Length%20vs%20sentiment%20polarity.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/Review%20Length%20vs%20sentiment%20polarity.png)
 
 # Customer Sentiment Analysis - Floweraura
 **1. Overview of Data Collection and Cleaning**
