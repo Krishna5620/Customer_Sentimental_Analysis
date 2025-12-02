@@ -166,7 +166,7 @@ def score(value):
 df["Score"] = df["Polarity"].apply(score)
 df
 ```
-![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/Polarity%20Score.png)
 
 ```python
 # Plotting score and there count 
