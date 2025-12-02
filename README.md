@@ -107,7 +107,7 @@ df["Posted_On"] = df["Posted_On"].apply(extract)
 df["Occasions"] = df["Occasions"].apply(extract)
 df
 ```
-![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/After%20removing%20extra%20text%20from%20columns.png)
 ## Removing (th, rd,st,nd) from Posted_On Columns
 ```python
 #Removing (th, rd,st,nd) from Posted_On Columns
@@ -121,7 +121,7 @@ df
 # Checking the datatype of each.
 df.info()
 ```
-![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/Checking%20the%20datatype%20of%20each..png)
 
 
 ## 3. Sentiment Analysis:
