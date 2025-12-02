@@ -93,7 +93,7 @@ Perform lemmatization to convert words into their base form (e.g., "running" →
 df = pd.DataFrame({"Names":Names, "Cities":Cities, "Posted_On":Posted_On, "Occasions":Occasions, "Ratings":Ratings, "Reviews":Reviews})
 df
 ```
-![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/Data%20Frame%20after%20cleaning.png)
+![Dashboard Screenshot](https://github.com/Krishna5620/Customer_Sentimental_Analysis/blob/main/Removing%20_th%2C%20rd%2Cst%2Cnd_%20from%20Posted_On%20Columns.png)
 ```python
 ###Extracting and Cleaning from Posted_On and Occassions Columns
 def extract(value):
